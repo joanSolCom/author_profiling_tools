@@ -22,7 +22,9 @@ How do I syntactically parse a text?
 
 Go to utils/parse_client/parse.py
 Change these lines:
+
 out_processed = "INTRODUCE THE OUTPUT PATH"
+
 out_clean = "INTRODUCE RAW TEXT PATH"
 
 The first path is where you want your parsed files to be stored (needs to exist before executing)
@@ -39,6 +41,7 @@ After having the files that correspond to the syntactic and discourse parsers, w
 To use my code, your data should have this structure:
 
 dataset_name/
+
 .../dataset_name/folder_with_raw_files/ -> this is where the txt files of your corpus are stored
 .../dataset_name/folder_with_synParsed_files/ -> contains the conll files with the output of the dependency parser
 .../dataset_name/folder_with_discParsed_files/ -> contains the discourse files
@@ -50,7 +53,11 @@ The format of the files should be the following:
 id_label
 
 The id is usually a numeric identifier and the label should be for example, the native language of the writer of that text, so you should have filenames that look like this:
+
 1_japanese
+
 2_chinese
+
 3_japanese
+
 4_korean
