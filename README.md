@@ -67,17 +67,24 @@ After generating both discourse and syntactic parses and having the file name an
 The main file is located in author_profiling_code/main.py . In that file, you will have to edit a couple of things:
 
 modelName = "PUT A NAME HERE IT IS NOT VERY RELEVANT"
+
 paths = {}
+
 paths["clean"] = "PATH OF RAW FILES"
+
 paths["discParsed"] = "PATH OF DICOURSE PROCESSED FILES"
+
 paths["synParsed"] = "PATH OF SYNTACTIC PROCESSED FILES"
+
 
 featureGroups = ["SyntacticFeatures", "CharacterBasedFeatures", "WordBasedFeatures", "SentenceBasedFeatures", "SentenceBasedFeatures", "DictionaryBasedFeatures", "LexicalFeatures"]
 
 suffix = "_".join(featureGroups)
+
 pathArff = "PATH WHERE YOU WANT YOUR WEKA FILE"
 
-labelPosition = #POSITION OF YOUR LABEL IN THE FILE NAME
+labelPosition = #POSITION OF YOUR LABEL IN THE FILE NAME. IMPORTANT, if your files are 1_korean, you should put 1 here.
+
 labeling = "NAME OF YOUR LABELING"
 
 It is pretty self explanatory, but try to put absolute paths. By labeling I mean what kind of labels are there, in a nli problem, could be simply "native language" (it is not relevant). 
