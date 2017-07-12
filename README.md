@@ -5,17 +5,11 @@ This is the code required to extract Juan Soler-Company's features from text and
 If this code is used, please cite the following paper:
 
 @inproceedings{solerEACL17,
-
     title={{On the Relevance of Syntactic and Discourse Features for Author Profiling and Identification}},
-
     author={Soler-Company, Juan and Wanner, Leo},
-
     booktitle={{15th Conference of the European Chapter of the Association for Computational Linguistics (EACL)}},
-
     year={2017},
-
     pages={681--687}
-
 }
 
 
